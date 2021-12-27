@@ -114,9 +114,7 @@ function draw() {
     }
     
 
-    if (invisibleGround.x < 0) {
-      invisibleGround.x = camera.position.x;
-    }
+    if (ground.x < 0){ ground.x = ground.width/2; }
     
     //jump when the space key is pressed
     if(keyDown("space")&& trex.y >= 100) {
